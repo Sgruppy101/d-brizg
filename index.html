@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Создание заявки</title>
+    </head>
+    <body>
+        <form action="http://localhost:8000/orders" method="post">
+            <input required placeholder="number" type="number" name="number" />
+            <input required placeholder="date" type="date" name="date" />
+            <input required placeholder="device" type="text" name="device" />
+            <input required placeholder="model" type="text" name="model" />
+            <input required placeholder="discripthion" type="text" name="discripthion" />
+            <input required placeholder="FIO" type="text" name="FIO" />
+            <input required placeholder="number_phone" type="text" name="number_phone" />
+            <select name="status">
+                <option>новая заявка</option>
+                <option>в процессе ремонта</option>
+                <option>завершена</option>
+            </select>
+            <input type="submit" value="Создать" />
+        </form>
+    </body>
+</html>
